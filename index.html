@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>Stride</title>
+<style>html,body{margin:0;height:100%;background:#000}video{width:100%;height:100%;object-fit:contain}</style></head>
+<body><video id="v" src="Stride-booth-loop-iPad-LOW.mp4" loop autoplay controls webkit-playsinline playsinline></video>
+<script>var v=document.getElementById('v');
+v.addEventListener('ended',function(){v.currentTime=0;v.play();});
+document.body.addEventListener('touchstart',function(){if(v.paused)v.play();});</script></body></html>
